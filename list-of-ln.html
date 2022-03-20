@@ -1,0 +1,44 @@
+
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="author" content="DenZ"/>
+  <meta name="description" content="Download your favorate Light Novels for free"/>
+  <meta property="og:site_name" content="Fnovels - Free Light Novels"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="logo.png" />
+  <meta property="facebook:image" content="logo.png"/>
+  <title>About Fnovels</title>
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="w3.css" title="Css Frameworks" type="text/css" />
+  <link rel="stylesheet" href="fnovels.min.css" />
+<style>
+  .novelList{margin:5px 7px;padding:7px 10px}
+  .novelListPage{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}
+  .novelListPage img{width:100px;height:100px}
+  #novelList{list-style-type: number;margin:20px}
+  #novelList > li {border:none}
+  #novelList > li > a{background: -webkit-linear-gradient(43deg, #ffd500, #ff8500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight:800}
+</style>
+</head>
+
+<body>
+   <div class="novelList main-container w3-container w3-black w3-round">
+       <button class="w3-btn w3-text-orange" onclick="history.back()" style="font-size:30px">&#8592;</button>
+       <div class="novelListPage">
+           <img src="logo.png" alt="logo.png">
+           <h2 id="lnListName">Light Novel List</h2>
+       </div>
+       <div class="list-content">
+         <ul class="w3-ul list" id="novelList">
+             
+         </ul>
+       </div>
+   </div>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="fnovels.min.js"></script>
+</body>
+
+</html>
