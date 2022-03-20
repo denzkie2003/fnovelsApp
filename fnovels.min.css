@@ -30,5 +30,4 @@ h1,h2,h3,h4,h5,h6,p{font-family:"Poppins",sans-serif;}
   #information span{overflow: hidden}
   #novelTitle,#description,#associatedName,#linkNovel > a{background: -webkit-linear-gradient(43deg, #ffd500, #ff8500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight:800}
   #dlNovel{background-color:#fd89ff;padding:5px 7px;border-radius:5px}
-  .shareContainer{background-color: #ff8a3ea9;padding:5px 10px;border-top-left-radius:5px;border-top-right-radius:5px}
-  .message{padding:5px 10px;background-color: #f4ff3f6a;border-bottom-left-radius:5px;border-bottom-right-radius:5px}
+  .message{padding:5px 10px;background-color: #f4ff3f6a;border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-left-radius:5px;border-top-right-radius:5px}
