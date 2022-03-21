@@ -13,6 +13,7 @@
   <!-- CSS Frameworks -->
   <link rel="stylesheet" href="w3.css" />
   <link rel="stylesheet" href="fnovels.min.css" />
+  <link rel="stylesheet" href="offline-theme-slide.css" type="text/css" media="all" />
   <title>Fnovels - Free Light Novels</title>
   <style>
   
@@ -31,10 +32,12 @@
 </head>
 <body>
    
-   <div class="item-container" w3-include-html="post.html"></div>
+   <div class="item-container" w3-include-html="post.html" id="itemContainer"></div>
    
   <script src="w3.js" type="text/javascript" charset="utf-8"></script>
   <script src="jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="offline.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="fnovels.min.js" type="text/javascript" charset="utf-8"></script>
   <script>
     w3.includeHTML();
   </script>
