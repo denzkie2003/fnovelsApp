@@ -28,10 +28,20 @@
     .item > a > img{width:inherit;height:auto;border-radius:5px}
     .item > h5{width:100%;background: -webkit-linear-gradient(43deg, #ffd500, #ff8500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;font-weight:800}
     .item > a:hover img{color:inherit}
+    .search-container{position: sticky;top:5px}
+    #search:focus{outline:none}
+    .sResult{width:91%;height:250px;background-color:white;box-shadow:2px 3px 10px 2px black;position:absolute;border-radius:5px;overflow-y:scroll;display:none;list-style-type:none}
+    .sResult li{border:none}
+    .sResult li a{text-decoration:none}
   </style>
 </head>
 <body>
-   
+  <div class="search-container w3-container" style="margin-top:10px;">
+     <form method="get">
+       <input class="w3-input w3-round" type="search" name="search" id="search" placeholder="Search LN with English Title" onkeyup="searchFunction()"/>
+     </form>
+     <ul class="w3-ul sResult list" id="novelList"></ul>
+   </div>
    <div class="item-container" w3-include-html="post.html" id="itemContainer"></div>
    
   <script src="w3.js" type="text/javascript" charset="utf-8"></script>
@@ -40,6 +50,28 @@
   <script src="fnovels.min.js" type="text/javascript" charset="utf-8"></script>
   <script>
     w3.includeHTML();
+    
+    function searchFunction(){
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('search');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("novelList");
+        li = ul.getElementsByTagName('li');
+        
+        if(input.value !== "")ul.style.display="block"
+        else ul.style.display="none";
+        // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+    }
   </script>
 </body>
 </html>
