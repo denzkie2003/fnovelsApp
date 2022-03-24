@@ -33,9 +33,22 @@
     .sResult{width:91%;height:250px;background-color:white;box-shadow:2px 3px 10px 2px black;position:absolute;border-radius:5px;overflow-y:scroll;display:none;list-style-type:none}
     .sResult li{border:none}
     .sResult li a{text-decoration:none}
+    .recommendation{position: relative;height:150px}
+    .recommendation img{width:100%;height:inherit}
+    .recommendation h3{position: absolute;bottom:-10px;width:93%;background:#0000008c;padding:5px;color:white}
+    .recommendation h3 a{text-decoration: none}
+    .recommendation p{position: absolute;top:0;background:#ff5454dc;color:white;font-weight:bold;width:auto;padding:5px;border-bottom-right-radius:15px}
   </style>
 </head>
 <body>
+  
+  <!-- For recommendation -->
+  <div class="recommendation w3-container">
+    <p>Recommended</p>
+    <img src="https://rexdl.com/image/android/app/moon-plus-reader-pro.jpg" alt="Moon+ Reader Pro Mod">
+    <h3><a href="download-moon-plus-reader-pro-mod-apk.html">Moon+ Reader Pro</a></h3>
+  </div>
+  
   <div class="search-container w3-container" style="margin-top:10px;">
      <form method="get">
        <input class="w3-input w3-round" type="search" name="search" id="search" placeholder="Search LN with English Title" onkeyup="searchFunction()"/>
