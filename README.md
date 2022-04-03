@@ -5,7 +5,7 @@ To those who love reading Light Novels, this is your chance to get your favorate
 It currently contains 54 Light Novels but it keep posting each day. Wether it old or newest released is here ~
 
 Download the app now
-👉https://www.mediafire.com/file/5rebj369wfvowtc/fnovelsv2.apk/file
+👉https://www.mediafire.com/file/ywe7yy6jwsb9n2t/gen_signed.apk/file
 
 For more information just visit and like, follow my page
 👉https://www.facebook.com/fnovelsv2/
