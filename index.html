@@ -51,6 +51,10 @@
   </style>
 </head>
 <body>
+  <div class="n2" style="display:flex;justify-content:center;align-items:center;width:100%;height:100vh;padding:0 15px">
+    <h3 style="color:orange">No Internet or slow connection.<br/>Please try again!</h3>
+  </div>
+<div class="n1">
   <div class="stick">
     <div class="w3-container navi">
     <div class="w3-col">
@@ -91,12 +95,23 @@
    </div>-->
    <div id="slot2" class="item-container" w3-include-html="post2.html" id="itemContainer"></div>
    <div id="slot1" class="item-container" w3-include-html="post.html" id="itemContainer"></div>
-   
+</div>
   <script src="w3.js" type="text/javascript" charset="utf-8"></script>
   <script src="jquery-3.6.0.js" type="text/javascript" charset="utf-8"></script>
   <script src="offline.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="fnovels.min.js" type="text/javascript" charset="utf-8"></script>
   <script>
+  //Check if connected to internet
+  $(document).ready(function(){
+    
+    $(".n2").hide();
+    if(!navigator.onLine){
+      alert("Failed to connect. Please check your internet connection!");
+      
+      $(".n2").show();
+      $(".n1").hide();
+     }
+  });
     w3.includeHTML();
     
     function searchFunction(){
