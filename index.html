@@ -34,23 +34,41 @@
     .item > a > img{width:inherit;height:inherit;border-radius:5px}
     .item > h5{width:100%;background: -webkit-linear-gradient(43deg, #ffd500, #ff8500);-webkit-background-clip: text;-webkit-text-fill-color: transparent;margin:0;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;font-weight:800;font-size:10px}
     .item > a:hover img{color:inherit}
-    .search-container{position: sticky;top:5px;z-index:100}
+    .stick{position:sticky;top:0;}
+    .search-container{z-index:100}
     #search:focus{outline:none}
-    .sResult{width:91%;height:250px;background-color:white;box-shadow:2px 3px 10px 2px black;position:absolute;border-radius:5px;overflow-y:scroll;display:none;list-style-type:none;z-index:100}
-    .sResult li{border:none}
-    .sResult li a{text-decoration:none}
+    .sResult{width:91%;height:250px;background-color:white;box-shadow:2px 3px 10px 2px black;position:absolute;border-radius:5px;overflow-y:scroll;display:none;list-style-type:none;z-index:70}
+    .sResult li{border:none;display:flex}
+    .sResult li img{width:50px;height:auto}
+    .sResult li a{margin-left:3px;text-decoration:none}
     .genre_collect{width:100%;background:gold;padding:3px;border-radius:5px;margin-top:3px}
     .genres{width:100%;background:white;border-radius:5px}
     .genres > a{margin: 0 7px}
     .item > .webnovel{position:absolute;top:0;left:0;background-color:#ff0074;color:white;border-bottom-right-radius:10px;font-size:10px;padding:3px 5px;border-top-left-radius:5px}
+    .navi{display:flex;margin-top:5px}
+    .navi > div{width:90px;padding:5px 7px}
+    .navi > div > a{color:#ff8300;font-size:15px}
   </style>
 </head>
 <body>
+  <div class="stick">
+    <div class="w3-container navi">
+    <div class="w3-col">
+      <a href="#">HOME</a>
+    </div>
+    <div class="w3-col">
+      <a href="https://jade-pegasus-4d36d2.netlify.app/list-of-ln.html">LIST</a>
+    </div>
+    <div class="w3-col">
+      <a href="https://jade-pegasus-4d36d2.netlify.app/about-us.html">ABOUT US</a>
+    </div>
+  </div>
   <div class="search-container w3-container" style="margin-top:10px;">
      <form method="get">
        <input class="w3-input w3-round" type="search" name="search" id="search" placeholder="Search LN with English Title" onkeyup="searchFunction()"/>
      </form>
      <ul class="w3-ul sResult list" id="novelList"></ul>
+  </div>
      <!-- Genre container-->
 
    <!--<div class="genre_collect" style="display:flex">
@@ -65,9 +83,9 @@
      </div>
    </div>
    </div>-->
-   <div class="width:100%;">
+   <!--<div class="width:100%;">
      <span style="color:gold;font-size:10px">Added: </span><span style="color:gold;font-size:10px">Berserk Of Gluttony Volume 6, </span><span style="color:gold;font-size:10px">Classroom of the Elite Volume 11, </span><span style="color:gold;font-size:10px">Death March to the Parallel World Rhapsody Volume 16</span>
-   </div>
+   </div>-->
    <!--<div style="width:100%;">
      <button style="background-color:orange;postion:relative;right:0;padding:5px 7px;border-radius:5px;border:none;margin:5px 0;color:#fff;">Next Page</button>
    </div>-->
